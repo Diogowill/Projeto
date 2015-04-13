@@ -1,0 +1,15 @@
+<%= simple_form_for(@funcionario) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :departamento,  label_method: nome %>
+    <%= f.input :nome %>
+    <%= f.input :cargo %>
+    <%= f.input :sexo %>
+    <%= f.input :endereco %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Salvar' %>
+  </div>
+<% end %>

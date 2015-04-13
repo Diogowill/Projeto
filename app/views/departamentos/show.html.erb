@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Empresa:</strong>
+  <%= @departamento.empresa.nome if @departamento.empresa %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @departamento.nome %>
+</p>
+
+<p>
+  <strong>Ramal:</strong>
+  <%= @departamento.ramal %>
+</p>
+
+<p>
+  <strong>Responsavel:</strong>
+  <%= @departamento.responsavel %>
+</p>
+
+<%= link_to 'Edit', edit_departamento_path(@departamento) %> |
+<%= link_to 'Back', departamentos_path %>

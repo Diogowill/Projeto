@@ -1,0 +1,14 @@
+<%= simple_form_for(@departamento) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :empresa %>
+    <%= f.input :nome %>
+    <%= f.input :ramal %>
+    <%= f.input :responsavel %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Salvar' %>
+  </div>
+<% end %>
